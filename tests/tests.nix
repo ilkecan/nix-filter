@@ -110,6 +110,7 @@ in
       "src/main.js"
       "src/components"
       "src/components/widget.jsx"
+      "src/innerdir"
     ];
   };
 

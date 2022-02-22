@@ -40,7 +40,7 @@ rec {
       directory_ = _toCleanPath args.root directory;
     in
     path: type:
-    directory_ == path
+    directory_ == path && args.matchParents
     # Add / to the end to make sure we match a full directory prefix
     || _hasPrefix (directory_ + "/") path;
 
